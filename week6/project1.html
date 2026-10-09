@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>How does Bitcoin Mining Work?</title>
+        <link rel="stylesheet" href="css/project1.css">
+    </head>
+    <body>
+        <nav>
+            <h1>HOW DOES BITCOIN MINING WORK?</h1>
+            <img id="coin" src="img/coin.png" alt="Bitcoin symbol">
+            <p>Bitcoin is a modern currency that is quickly
+                gaining credibility in the modern world. The process of “mining”
+                bitcoin is something we may have all heard, but what does that
+                mean? Simply put, bitcoin mining is a process that validates the
+                financial transactions going on in the Blockchain and introduces
+                additional currency into the system. The exact steps of this
+                process are actually quite simple.</p>
+        </nav>
+        <main>
+            <ol>
+                <li>
+                    <h2>THE BLOCKCHAIN</h2>
+                    <img src="img/initial_bitcoin_block.png"
+                        alt="Initial bitcoin block">
+                    <p>Another word that describes the Blockchain could be a
+                        list of ledgers. It’s a history of all bitcoin
+                        transactions that have happened and everyone receives a
+                        copy of said history. Whenever a new transaction is
+                        made, that information is shared with everyone in the
+                        blockchain. Each transaction has a digital signature,
+                        meaning a payer is always aware of where their money is
+                        going.</p>
+                </li>
+                <li>
+                    <h2>CREATING A BLOCK</h2>
+                    <img src="img/completed_block.png"
+                        alt="completed bitcoin block">
+                    <p>A block contains about 2,400 transactions. What makes a
+                        block valid is the hash(unique ID) connected to it,
+                        however the catch is that this hash value must be
+                        discovered. Using said hash to plug into a function
+                        called SHA256 will essentially convert the hash value
+                        back into the data of the transitions contained in the
+                        block, as well as the previous block’s hash value.</p>
+                </li>
+                <li>
+                    <h2>PROOF OF WORK</h2>
+                    <img src="img/current_block.png"
+                        alt="current bitcoin block missing hash">
+                    <p>This is where a miner's duty comes into play. Through
+                        random number generation on their computers, they plug
+                        these random numbers into the SHA256, hoping that the
+                        data generated matches the hash of the block*. To
+                        generate the correct hash value takes time and energy,
+                        as such, a miner generating the said hash values “proves
+                        his work” with this effort.</p>
+                </li>
+                <li>
+                    <h2>BLOCK REWARD</h2>
+                    <img src="img/reward_block.png"
+                        alt="current bitcoin block with reward">
+                    <p>The creation and validation of a new block creates
+                        new
+                        bitcoin that is rewarded to the miner. Those
+                        bitcoins
+                        are identified as part of the newly generated block.
+                        Currently, the reward is 6.25 bitcoin, that total
+                        gets
+                        cut in half about every 210,000 blocks created, or
+                        about
+                        every four years.</p>
+                </li>
+                <li>
+                    <h2>CYCLE REPETITION</h2>
+                    <p>After the new block has been created and validated,
+                        it is
+                        sent out to all of those who are part of the block
+                        chain
+                        so they can update their own personal copy of the
+                        data.
+                        Due to the nature of the generation of the block(as
+                        explained), it is almost always safe to trust the
+                        longest version of the chain being broadcasted.</p>
+                </li>
+            </ol>
+        </main>
+        <footer>
+            <h3>*HOW DO YOU SUCCESSFULLY WIN A BLOCK?</h3>
+            <p>SHA256 generates a random 64-digit hexadecimal number based on
+                its input
+                (the guessed hash value). A hash value is only valid when the
+                generated number
+                has the same amount of leading zeros AND is less than the block
+                SHA256 value</p>
+            <img src="img/how_to_.win_block.png"
+                alt="Bitcoin mining proof-of-work example">
+        </footer>
+    </body>
+
+</html>
