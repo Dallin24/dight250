@@ -1,0 +1,109 @@
+/* ============================================================
+   YOUR TURN — Riverbend Coffee Co.
+
+   This page is in the same "before" state as the nav bar and
+   content sections we built together in class. Nothing below
+   is Flexbox yet, so everything just stacks top to bottom.
+
+   Your tasks:
+
+   TODO 1 — Make .top-nav a flex container. Space the brand
+            name and the menu apart from each other, and line
+            them up vertically.
+
+   TODO 2 — The link list (.nav-menu) is still a stacked list
+            inside the nav. Give it its own flex row with some
+            spacing between links.
+
+   TODO 3 — Make .info-sections a flex row (with a gap) so the
+            three cards sit side by side. Then give each
+            .info-card a flexible width so they end up roughly
+            equal size instead of sized to their own content.
+
+   STRETCH — Let the cards wrap onto a new line on narrow
+             screens instead of squishing down. HAVEN'T COMPLETED YET
+
+   Don't peek at the class demo files — try it from what you
+   saw in the live demo first, then check with your instructor
+   if you get stuck.
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  color: #2b2420;
+  background: #faf6f1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- Top nav (not horizontal yet — TODO 1 and TODO 2) --- */
+.top-nav {
+  display: flex;
+  gap: 20px;
+  background: #4a3426;
+  color: #ffffff;
+  padding: 1rem 2rem;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.nav-menu a {
+  display: inline-block;
+  padding: 0.25rem 0;
+}
+
+.nav-menu a:hover {
+  color: #e8b979;
+}
+
+/* --- Info sections (not arranged yet — TODO 3) --- */
+.info-sections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 2rem;
+}
+
+.info-card {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e7ddd2;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #8a7b6c;
+  font-size: 0.9rem;
+}
