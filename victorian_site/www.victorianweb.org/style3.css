@@ -1,0 +1,230 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 2986852, 2015-03-08T19:53:19-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Oxford by Monotype 
+ * URL: http://www.myfonts.com/fonts/mti/oxford/oxford/
+ * Copyright: Copyright &#x00A9; 1992 by Agfa Corporation. All rights reserved.
+ * Licensed pageviews: 250,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2986852
+ * 
+ * Â© 2015 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+
+@import url("http://hello.myfonts.net/count/2d9364");
+@font-face {font-family: 'Oxford';src: url('https://www.victorianweb.org/webfonts/2D9364_0_0.eot');src: url('https://www.victorianweb.org/webfonts/2D9364_0_0.eot?#iefix') format('embedded-opentype'),url('https://www.victorianweb.org/webfonts/2D9364_0_0.woff2') format('woff2'),url('https://www.victorianweb.org/webfonts/2D9364_0_0.woff') format('woff'),url('https://www.victorianweb.org/webfonts/2D9364_0_0.ttf') format('truetype');}
+
+a:not(:hover) {
+	text-decoration: none;
+}
+
+table tbody tr td:has(.nav2-tile) br {
+	display: none;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#main > table {
+	width: auto;
+}
+
+#main > table > tbody > tr {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+
+/* 
+#main > table > tbody > tr > td:first-child {
+	position: absolute;
+	background-color: rgba(255,255,255,0.85);
+	min-height: 100vh;
+	display: none;
+}
+ */
+
+#main > table > tbody > tr > td:first-child {
+	order: 2;
+	width: calc(100% - 40px);
+	margin-top: 1em;
+	padding: 20px;
+	text-align: center;
+}
+
+#main > table > tbody > tr > td:first-child a {
+	display: block;
+	font-size: 1.5em;
+}
+
+#main > table > tbody > tr > td:first-child a[href^="https://twitter.com"],
+#main > table > tbody > tr > td:first-child a[href^="https://mastodonapp.uk"] {
+	display: inline-block;
+	margin: 0 0.5em;
+}
+
+#main > table > tbody > tr > td:first-child a[href^="https://twitter.com"] img,
+#main > table > tbody > tr > td:first-child a[href^="https://mastodonapp.uk"] img {
+	height: 3em;
+	width: auto;
+}
+
+#main > table > tbody > tr > td:last-child {
+	width: auto;
+	padding: 0;
+}
+
+table > tbody > tr > td > a:has(> .nav2-tile),
+center > a:has(> .nav2-tile) {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #0b0bf5;
+	color: #FFFF00;
+	font-family: Oxford, â€˜Metrophobicâ€™, Helvetica, serif;
+	font-size: 1.15em;
+	font-weight: 300;
+	text-align: center;
+	width: 9rem;
+	height: 4rem;
+}
+
+table:has( > tbody > tr > td > .nav3-tile) {
+	width: auto;
+}
+
+table > tbody > tr > td:has(> .nav3-tile) {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 1.5em;
+	width: 18.25rem;
+	height: 4rem;
+	vertical-align: middle;
+}
+
+/* 
+table tr:has(> td > a > .nav2-tile) {
+	display: flex;
+}
+ */
+
+.nav3-tile {
+	color: #0b0bf5;
+	text-align: center;
+	font-family: Oxford, â€˜Metrophobicâ€™, Helvetica, serif;
+	font-weight: 400;
+	line-height: 0.9;
+	font-size: 1.5em;
+}
+
+@media screen and (max-width: 960px) {
+	table > tbody > tr > td:has(> .nav3-tile) {
+		font-size: 1em;
+		width: 7rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	table > tbody > tr > td > a:has(> .nav2-tile),
+								center > a:has(> .nav2-tile) {
+		width: 8rem;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	table tbody tr td:has(.nav2-tile) br:not(:first-child) {
+		display: block;
+	}
+	
+	table > tbody > tr > td > a:has(> .nav2-tile),
+						center > a:has(> .nav2-tile) {
+		font-size: 1.1em;
+	}
+	
+	table > tbody > tr > td > a:has(> .nav2-tile),
+								center > a:has(> .nav2-tile) {
+		width: 6rem;
+	}
+	
+	table > tbody > tr > td:has(> .nav3-tile) {
+		width: 6rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	table > tbody > tr > td > a:has(> .nav2-tile),
+	center > a:has(> .nav2-tile) {
+		font-size: 1em;
+	}
+	
+	table > tbody > tr > td > a:has(> .nav2-tile),
+	center > a:has(> .nav2-tile) {
+		width: 5rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	table tbody tr td:has(.nav2-tile) br:not(:first-child) {
+		display: none;
+	}
+	
+	#main > table {
+		width: 100%;
+	}
+	
+	#main > table > tbody > tr > td table,
+	#main > table > tbody > tr > td table > tbody {
+		display: block;
+		width: 100%;
+	}
+	
+	#main > table > tbody > tr > td:nth-child(2) > center:first-child > table:before {
+		content: "The Victorian Web";
+		display: block;
+		color: #0b0bf5;
+		text-align: center;
+		font-family: Oxford, â€˜Metrophobicâ€™, Helvetica, serif;
+		font-weight: 400;
+		line-height: 0.9;
+		font-size: 10vw;
+		margin: 0.25em 0;
+	}
+	
+	table > tbody > tr:has(> td > a > .nav2-tile) {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	table > tbody > tr > td:has(> a > .nav2-tile),
+	center:has(> a > .nav2-tile) {
+		display: block;
+		width: 100%;
+		padding: 2px 0;
+	}
+	
+	table > tbody > tr > td > a:has(.nav2-tile),
+	center > a:has(> .nav2-tile) {
+		width: 100%;
+		font-size: 1.333em;
+	}
+	
+	table > tbody > tr > td:has(> .nav3-tile) {
+		display: none;
+	}
+}
